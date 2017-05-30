@@ -27,9 +27,7 @@ namespace PrivatePublicClassifier
         /// </summary>
         public InternalMethodLineClassifierFormat()
         {
-            this.DisplayName = "InternalMethodLineClassifier"; // Human readable version of the name
-            this.BackgroundColor = Colors.BlueViolet;
-            this.TextDecorations = System.Windows.TextDecorations.Underline;
+            this.DisplayName = "Access modifier Internal method line"; // Human readable version of the name
         }
     }
 }

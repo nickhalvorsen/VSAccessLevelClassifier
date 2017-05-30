@@ -57,10 +57,17 @@ namespace PrivatePublicClassifier
         /// <returns>A list of ClassificationSpans that represent spans identified to be of this classification.</returns>
         public IList<ClassificationSpan> GetClassificationSpans(SnapshotSpan span)
         {
-            var result = new List<ClassificationSpan>()
+            var result = new List<ClassificationSpan>();
+
+            var lineText = span.GetText().TrimStart().ToLower();
+            var indentSize = span.GetText().Length - span.GetText().TrimStart().Length;
+
+            if (lineText.StartsWith("public ")
+                && lineText.Contains("(")
+                && lineText.Contains(")"))
             {
-                new ClassificationSpan(new SnapshotSpan(span.Snapshot, new Span(span.Start, span.Length)), this.classificationType)
-            };
+                result.Add(new ClassificationSpan(new SnapshotSpan(span.Snapshot, new Span(span.Start.Add(indentSize), span.Length)), this.classificationType));
+            }
 
             return result;
         }

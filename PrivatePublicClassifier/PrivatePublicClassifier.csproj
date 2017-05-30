@@ -48,19 +48,35 @@
     <Compile Include="InternalMethodClassifierClassificationDefinition.cs" />
     <Compile Include="InternalMethodClassifierFormat.cs" />
     <Compile Include="InternalMethodClassifierProvider.cs" />
+    <Compile Include="InternalMethodLineClassifier.cs" />
+    <Compile Include="InternalMethodLineClassifierClassificationDefinition.cs" />
+    <Compile Include="InternalMethodLineClassifierFormat.cs" />
+    <Compile Include="InternalMethodLineClassifierProvider.cs" />
     <Compile Include="PrivateMethodClassifier.cs" />
     <Compile Include="PrivateMethodClassifierClassificationDefinition.cs" />
     <Compile Include="PrivateMethodClassifierFormat.cs" />
     <Compile Include="PrivateMethodClassifierProvider.cs" />
+    <Compile Include="PrivateMethodLineClassifier.cs" />
+    <Compile Include="PrivateMethodLineClassifierClassificationDefinition.cs" />
+    <Compile Include="PrivateMethodLineClassifierFormat.cs" />
+    <Compile Include="PrivateMethodLineClassifierProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProtectedMethodClassifier.cs" />
     <Compile Include="ProtectedMethodClassifierClassificationDefinition.cs" />
     <Compile Include="ProtectedMethodClassifierFormat.cs" />
     <Compile Include="ProtectedMethodClassifierProvider.cs" />
+    <Compile Include="ProtectedMethodLineClassifier.cs" />
+    <Compile Include="ProtectedMethodLineClassifierClassificationDefinition.cs" />
+    <Compile Include="ProtectedMethodLineClassifierFormat.cs" />
+    <Compile Include="ProtectedMethodLineClassifierProvider.cs" />
     <Compile Include="PublicMethodClassifier.cs" />
     <Compile Include="PublicMethodClassifierClassificationDefinition.cs" />
     <Compile Include="PublicMethodClassifierFormat.cs" />
     <Compile Include="PublicMethodClassifierProvider.cs" />
+    <Compile Include="PublicMethodLineClassifier.cs" />
+    <Compile Include="PublicMethodLineClassifierClassificationDefinition.cs" />
+    <Compile Include="PublicMethodLineClassifierFormat.cs" />
+    <Compile Include="PublicMethodLineClassifierProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

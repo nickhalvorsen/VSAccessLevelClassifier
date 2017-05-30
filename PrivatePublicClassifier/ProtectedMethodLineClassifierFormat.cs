@@ -27,9 +27,7 @@ namespace PrivatePublicClassifier
         /// </summary>
         public ProtectedMethodLineClassifierFormat()
         {
-            this.DisplayName = "ProtectedMethodLineClassifier"; // Human readable version of the name
-            this.BackgroundColor = Colors.BlueViolet;
-            this.TextDecorations = System.Windows.TextDecorations.Underline;
+            this.DisplayName = "Access modifier Protected method line"; // Human readable version of the name
         }
     }
 }
