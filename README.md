@@ -4,4 +4,4 @@ Visual Studio extension that adds options to highlight access modifiers (e.g. pu
 
 
 ## Screenshot
-![alt text](https://i.imgur.com/gE7EJ1A.png "screenshot")
+![alt text](https://i.imgur.com/dodH1EW.png "screenshot")
