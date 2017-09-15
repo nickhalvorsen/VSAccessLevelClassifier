@@ -27,7 +27,7 @@ namespace PrivatePublicClassifier
         /// </summary>
         public PublicMethodLineClassifierFormat()
         {
-            this.DisplayName = "Access modifier Public method line"; // Human readable version of the name
+            this.DisplayName = "C# public method"; // Human readable version of the name
         }
     }
 }

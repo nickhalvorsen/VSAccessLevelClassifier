@@ -16,6 +16,7 @@ namespace PrivatePublicClassifier
     /// and is underlined.
     /// </summary>
     [Export(typeof(EditorFormatDefinition))]
+    [FileExtension(".cs")]
     [ClassificationType(ClassificationTypeNames = "InternalMethodClassifier")]
     [Name("InternalMethodClassifier")]
     [UserVisible(true)] // This should be visible to the end user
@@ -27,7 +28,7 @@ namespace PrivatePublicClassifier
         /// </summary>
         public InternalMethodClassifierFormat()
         {
-            this.DisplayName = "Access modifier Internal"; // Human readable version of the name
+            this.DisplayName = "C# 'internal' keyword"; // Human readable version of the name
         }
     }
 }

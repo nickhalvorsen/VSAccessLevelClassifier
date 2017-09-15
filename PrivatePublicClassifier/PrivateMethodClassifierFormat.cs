@@ -27,7 +27,7 @@ namespace PrivatePublicClassifier
         /// </summary>
         public PrivateMethodClassifierFormat()
         {
-            this.DisplayName = "Access modifier Private"; // Human readable version of the name
+            this.DisplayName = "C# 'private' keyword"; // Human readable version of the name
         }
     }
 }

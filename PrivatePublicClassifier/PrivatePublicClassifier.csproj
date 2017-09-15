@@ -77,6 +77,7 @@
     <Compile Include="PublicMethodLineClassifierClassificationDefinition.cs" />
     <Compile Include="PublicMethodLineClassifierFormat.cs" />
     <Compile Include="PublicMethodLineClassifierProvider.cs" />
+    <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

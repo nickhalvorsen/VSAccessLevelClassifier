@@ -62,10 +62,11 @@ namespace PrivatePublicClassifier
             var lineText = span.GetText().TrimStart().ToLower();
             var indentSize = span.GetText().Length - span.GetText().TrimStart().Length;
 
+            
+
             if (lineText.StartsWith("internal ")
                 || lineText.StartsWith("protected internal ")
-                && lineText.Contains("(")
-                && lineText.Contains(")"))
+                && Utility.LooksLikeMethodLine(lineText))
             {
                 result.Add(new ClassificationSpan(new SnapshotSpan(span.Snapshot, new Span(span.Start.Add(indentSize), span.Length)), this.classificationType));
             }

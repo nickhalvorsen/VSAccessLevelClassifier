@@ -21,7 +21,7 @@ namespace PrivatePublicClassifier
         /// </summary>
         private readonly IClassificationType classificationType;
 
-        /// <summary>
+        /// <summary>hub
         /// Initializes a new instance of the <see cref="PublicMethodLineClassifier"/> class.
         /// </summary>
         /// <param name="registry">Classification registry.</param>
@@ -63,8 +63,7 @@ namespace PrivatePublicClassifier
             var indentSize = span.GetText().Length - span.GetText().TrimStart().Length;
 
             if (lineText.StartsWith("public ")
-                && lineText.Contains("(")
-                && lineText.Contains(")"))
+                && Utility.LooksLikeMethodLine(lineText))
             {
                 result.Add(new ClassificationSpan(new SnapshotSpan(span.Snapshot, new Span(span.Start.Add(indentSize), span.Length)), this.classificationType));
             }
