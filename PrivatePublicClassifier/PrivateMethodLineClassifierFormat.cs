@@ -16,7 +16,7 @@ namespace PrivatePublicClassifier
     /// and is underlined.
     /// </summary>
     [Export(typeof(EditorFormatDefinition))]
-    [FileExtension(".cs")]
+    [ContentType("CSharp")]
     [ClassificationType(ClassificationTypeNames = "PrivateMethodLineClassifier")]
     [Name("PrivateMethodLineClassifier")]
     [UserVisible(true)] // This should be visible to the end user
