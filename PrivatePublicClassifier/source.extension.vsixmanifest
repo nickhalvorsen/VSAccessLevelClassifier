@@ -5,10 +5,16 @@
         <DisplayName>PrivatePublicClassifier</DisplayName>
         <Description xml:space="preserve">Highlight access modifiers</Description>
     </Metadata>
-    <Installation InstalledByMsi="false">
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,17.0]" />
-        <InstallationTarget Id="Microsoft.VisualStudio.Professional" Version="[14.0,17.0]" />
-        <InstallationTarget Version="[14.0,17.0]" Id="Microsoft.VisualStudio.Enterprise" />
+    <Installation InstalledByMsi="false" AllUsers="true">
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,17.0]">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Professional" Version="[14.0,17.0]">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[14.0,17.0]" Id="Microsoft.VisualStudio.Enterprise">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
